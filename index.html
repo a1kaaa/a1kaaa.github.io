@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr" data-github-username="a1kaaa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio de développeur : projets, compétences, contact." />
+    <title>Portfolio | Étudiant Développement</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <div class="bg" aria-hidden="true">
+      <div class="blob blob--a"></div>
+      <div class="blob blob--b"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Retour en haut"><img class="brand__logo" src="img/logo.svg" alt="Logo" width="64" height="64" /></a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a class="nav__link" href="#apropos">À propos</a>
+          <a class="nav__link" href="#projets">Projets</a>
+          <a class="nav__link" href="#competences">Compétences</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn--ghost" href="https://github.com/a1kaaa" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero container">
+        <p class="kicker reveal">Étudiant • Développement • Sécurité informatique • Sensibilisation • Conscience numérique • Vulgarisation</p>
+        <h1 class="hero__title reveal">Développement</h1>
+        <p class="hero__subtitle reveal">
+          Ce portfolio est relié à Github, mes projets seront mis à jour en temps réel.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn" href="#projets">Voir tous mes projets</a>
+          <a class="btn btn--ghost" href="#contact">Me contacter</a>
+        </div>
+
+        <div class="hero__stats reveal" role="list" aria-label="Chiffres clés">
+          <div class="stat" role="listitem">
+            <div class="stat__value" id="statRepos">—</div>
+            <div class="stat__label">Repos publics</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__value" id="statStars">—</div>
+            <div class="stat__label">Stars</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__value" id="statUpdated">—</div>
+            <div class="stat__label">Dernière MAJ</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="apropos">
+        <div class="section__head reveal">
+          <h2>À propos</h2>
+          <p>
+            Je cherche des opportunités (stage/alternance) en informatique dans des domaines variés : développement web, sécurité informatique, recherche opérationnelle, optimisation, algorithmie, maintenance de base de données, etc.
+
+            J'ai la chance d'avoir déjà pu toucher à plusieurs de ces domaines au cours de mes études et de mes projets personnels. Je suis curieux et motivé à l'idée d'acquérir de nouvelles compétences et de relever des défis techniques.
+          </p>
+        </div>
+
+        <div class="about reveal">
+          <div class="about__card">
+            <h3>Ce que je privilégie</h3>
+            <ul class="list">
+              <li>Code lisible, propre, facilement maintenable</li>
+              <li>Grande attention accordée à la factorisation</li>
+              <li>Performances optimales</li>
+              <li>Accessibilité, user-friendly</li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <h3>Ce que je peux réaliser</h3>
+            <p class="muted">
+             Script d'automatisation, développement logiciel, site vitrine, analyse de données, algorithme d'optimisation, construction de base de données,
+
+             montage photo et vidéo (Adobe Photoshop et Sony Vegas Pro), support technique, sensibilisation à la sécurité informatique et à la conscience numérique.
+            <br>
+             Vulgarisation de concepts techniques et scientifiques abstraits.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projets">
+        <div class="section__head reveal">
+          <h2>Projets</h2>
+          <p>
+            Mes repos GitHub publics les plus récents :
+          </p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="pill" id="ghStatus" aria-live="polite">Prêt</div>
+          <div class="pill pill--hint">Note : ces projets sont du domaine <span class="mono">scolaire.</span> Ils répondent à un cahier des charges précis et donc <span class="mono">partiel.</span> </div>
+        </div>
+
+        <div class="projects" id="projectsGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section container" id="competences">
+        <div class="section__head reveal">
+          <h2>Compétences</h2>
+          <p>Maîtrise satisfaisante de plusieurs langages et outils de développement</p>
+        </div>
+
+        <div class="tags reveal" aria-label="Liste de compétences">
+          <span class="tag">Git</span>
+          <span class="tag">Python</span>
+          <span class="tag">C</span>
+          <span class="tag">Ocaml</span>
+          <span class="tag">Bash</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
+
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="section__head reveal">
+          <h2>Contact</h2>
+          <p>Dispo pour échanger sur un projet ou une opportunité.</p>
+        </div>
+
+        <div class="contact reveal">
+          <a class="btn" href="mailto:Quentin.Angeretti@etu.univ-grenoble-alpes.fr">Quentin.Angeretti@etu.univ-grenoble-alpes.fr</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/quentin-angeretti-013ab3269" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/a1kaaa" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+
+      <footer class="footer container">
+        <div class="footer__line"></div>
+        <p class="muted">© <span id="year"></span> • a1ka</p>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

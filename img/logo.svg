@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#C2E2FA" />
+      <stop offset="1" stop-color="#540863" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.5" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- Key head (hexagon / shield shape for cyber feel) -->
+    <path d="M22 12 L32 8 L42 12 L42 26 L32 32 L22 26 Z" stroke="url(#g)" stroke-width="3" fill="#111111" fill-opacity="0.15" />
+    <path d="M22 12 L32 8 L42 12 L42 26 L32 32 L22 26 Z" stroke="#C2E2FA" stroke-opacity="0.25" stroke-width="1.5" />
+
+    <!-- Inner lock / keyhole -->
+    <circle cx="32" cy="18" r="4" stroke="#EEEEEE" stroke-width="2.5" />
+    <path d="M32 22 V27" stroke="#EEEEEE" stroke-width="2.5" />
+
+    <!-- Circuit nodes on head -->
+    <circle cx="26" cy="16" r="1.5" fill="#C2E2FA" />
+    <circle cx="38" cy="16" r="1.5" fill="#C2E2FA" />
+    <circle cx="26" cy="24" r="1.5" fill="#540863" />
+    <circle cx="38" cy="24" r="1.5" fill="#540863" />
+
+    <!-- Circuit traces -->
+    <path d="M26 16 H22" stroke="#C2E2FA" stroke-opacity="0.8" stroke-width="1.5" />
+    <path d="M38 16 H42" stroke="#C2E2FA" stroke-opacity="0.8" stroke-width="1.5" />
+    <path d="M26 24 V28" stroke="#540863" stroke-opacity="0.7" stroke-width="1.5" />
+    <path d="M38 24 V28" stroke="#540863" stroke-opacity="0.7" stroke-width="1.5" />
+
+    <!-- Key shaft -->
+    <path d="M32 32 V54" stroke="url(#g)" stroke-width="4" />
+    <path d="M32 32 V54" stroke="#EEEEEE" stroke-opacity="0.15" stroke-width="2" />
+
+    <!-- Key teeth (digital / binary style) -->
+    <path d="M32 54 H40" stroke="url(#g)" stroke-width="4" />
+    <path d="M32 48 H38" stroke="#C2E2FA" stroke-width="3" />
+    <path d="M32 42 H36" stroke="#EEEEEE" stroke-opacity="0.85" stroke-width="3" />
+
+    <!-- Binary hint on shaft -->
+    <text x="28" y="39" font-family="monospace" font-size="5" fill="#C2E2FA" fill-opacity="0.7">1</text>
+    <text x="34" y="39" font-family="monospace" font-size="5" fill="#EEEEEE" fill-opacity="0.5">0</text>
+    <text x="28" y="46" font-family="monospace" font-size="5" fill="#EEEEEE" fill-opacity="0.5">0</text>
+    <text x="34" y="46" font-family="monospace" font-size="5" fill="#540863" fill-opacity="0.8">1</text>
+
+    <!-- Glow accent on top -->
+    <path d="M27 10 Q32 6 37 10" stroke="#C2E2FA" stroke-opacity="0.4" stroke-width="2" />
+  </g>
+</svg>
