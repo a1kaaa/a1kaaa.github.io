@@ -13,97 +13,150 @@
     <div class="bg" aria-hidden="true">
       <div class="blob blob--a"></div>
       <div class="blob blob--b"></div>
+      <div class="blob blob--c"></div>
       <div class="grid"></div>
+      <div class="noise"></div>
+      <div class="scanlines"></div>
     </div>
 
     <header class="header" id="top">
       <div class="container header__inner">
-        <a class="brand" href="#top" aria-label="Retour en haut"><img class="brand__logo" src="img/logo.svg" alt="Logo" width="64" height="64" /></a>
+        <a class="brand-text glitch-hover" href="#top" aria-label="Retour en haut" data-text="A1KA">A1KA</a>
 
         <nav class="nav" aria-label="Navigation principale">
-          <a class="nav__link" href="#apropos">À propos</a>
-          <a class="nav__link" href="#projets">Projets</a>
-          <a class="nav__link" href="#competences">Compétences</a>
-          <a class="nav__link" href="#contact">Contact</a>
+          <a class="nav__link" href="#apropos" data-text="À propos">À propos</a>
+          <a class="nav__link" href="#projets" data-text="Projets">Projets</a>
+          <a class="nav__link" href="#competences" data-text="Skills">Skills</a>
+          <a class="nav__link" href="#contact" data-text="Contact">Contact</a>
         </nav>
 
-        <a class="btn btn--ghost" href="https://github.com/a1kaaa" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn--neon" href="https://github.com/a1kaaa" target="_blank" rel="noreferrer">
+          <span class="btn__text">GitHub</span>
+          <span class="btn__glitch" aria-hidden="true">GitHub</span>
+        </a>
       </div>
     </header>
 
     <main id="contenu">
-      <section class="hero container">
-        <p class="kicker reveal">Étudiant • Développement • Sécurité informatique • Sensibilisation • Conscience numérique • Vulgarisation</p>
-        <h1 class="hero__title reveal">Développement</h1>
-        <p class="hero__subtitle reveal">
-          Ce portfolio est relié à Github, mes projets seront mis à jour en temps réel.
-        </p>
-
-        <div class="hero__cta reveal">
-          <a class="btn" href="#projets">Voir tous mes projets</a>
-          <a class="btn btn--ghost" href="#contact">Me contacter</a>
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>DÉVELOPPEMENT • SÉCURITÉ • CODE • INNOVATION • CRÉATIVITÉ • </span>
+          <span>DÉVELOPPEMENT • SÉCURITÉ • CODE • INNOVATION • CRÉATIVITÉ • </span>
         </div>
+      </div>
 
-        <div class="hero__stats reveal" role="list" aria-label="Chiffres clés">
-          <div class="stat" role="listitem">
-            <div class="stat__value" id="statRepos">—</div>
-            <div class="stat__label">Repos publics</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="stat__value" id="statStars">—</div>
-            <div class="stat__label">Stars</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="stat__value" id="statUpdated">—</div>
-            <div class="stat__label">Dernière MAJ</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section container" id="apropos">
-        <div class="section__head reveal">
-          <h2>À propos</h2>
-          <p>
-            Je cherche des opportunités (stage/alternance) en informatique dans des domaines variés : développement web, sécurité informatique, recherche opérationnelle, optimisation, algorithmie, maintenance de base de données, etc.
-
-            J'ai la chance d'avoir déjà pu toucher à plusieurs de ces domaines au cours de mes études et de mes projets personnels. Je suis curieux et motivé à l'idée d'acquérir de nouvelles compétences et de relever des défis techniques.
-          </p>
-        </div>
-
-        <div class="about reveal">
-          <div class="about__card">
-            <h3>Ce que je privilégie</h3>
-            <ul class="list">
-              <li>Code lisible, propre, facilement maintenable</li>
-              <li>Grande attention accordée à la factorisation</li>
-              <li>Performances optimales</li>
-              <li>Accessibilité, user-friendly</li>
-            </ul>
-          </div>
-          <div class="about__card">
-            <h3>Ce que je peux réaliser</h3>
-            <p class="muted">
-             Script d'automatisation, développement logiciel, site vitrine, analyse de données, algorithme d'optimisation, construction de base de données,
-
-             montage photo et vidéo (Adobe Photoshop et Sony Vegas Pro), support technique, sensibilisation à la sécurité informatique et à la conscience numérique.
-            <br>
-             Vulgarisation de concepts techniques et scientifiques abstraits.
+      <section class="hero container" id="apropos">
+        <div class="hero__main">
+          <div class="hero__content">
+            <p class="kicker reveal">
+              <span class="kicker__word">Étudiant</span>
+              <span class="kicker__dot">◆</span>
+              <span class="kicker__word">Dev</span>
+              <span class="kicker__dot">◆</span>
+              <span class="kicker__word">Sécu</span>
+              <span class="kicker__dot">◆</span>
+              <span class="kicker__word">Tech</span>
             </p>
+
+            <h1 class="hero__title reveal" data-text="DÉVELOPPEMENT">
+              <span class="title__line">DÉVE</span>
+              <span class="title__line title__line--accent">LOPPE</span>
+              <span class="title__line">MENT</span>
+            </h1>
+
+            <p class="hero__subtitle reveal">
+              Portfolio connecté à <span class="highlight">GitHub</span> — Projets synchronisés en temps réel
+            </p>
+
+            <div class="hero__cta reveal">
+              <a class="btn btn--primary" href="#projets">
+                <span class="btn__text">Voir mes projets</span>
+                <span class="btn__arrow">→</span>
+              </a>
+              <a class="btn btn--outline" href="#contact">Me contacter</a>
+            </div>
+
+            <div class="hero__stats reveal" role="list" aria-label="Chiffres clés">
+              <div class="stat" role="listitem">
+                <div class="stat__value counter" id="statRepos" data-target="0">—</div>
+                <div class="stat__label">Repos</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat__value counter" id="statStars" data-target="0">—</div>
+                <div class="stat__label">Stars</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat__value" id="statUpdated">—</div>
+                <div class="stat__label">Update</div>
+              </div>
+            </div>
           </div>
+
+          <div class="hero__about reveal">
+            <div class="about__header">
+              <h2 class="about__title glitch-text" data-text="À PROPOS">À PROPOS</h2>
+              <p class="about__desc">
+                En recherche d'opportunités <span class="highlight">(stage/alternance)</span>
+              </p>
+            </div>
+            <div class="about__cards">
+              <div class="about__card">
+                <div class="card__inner">
+                  <div class="card__icon">◉</div>
+                  <h3>Philosophie</h3>
+                  <ul class="list list--styled">
+                    <li><span class="list__marker">→</span> Code clean & maintenable</li>
+                    <li><span class="list__marker">→</span> Factorisation obsessionnelle</li>
+                    <li><span class="list__marker">→</span> Performance first</li>
+                    <li><span class="list__marker">→</span> UX accessible</li>
+                  </ul>
+                </div>
+                <div class="card__shine"></div>
+              </div>
+              <div class="about__card">
+                <div class="card__inner">
+                  <div class="card__icon">◈</div>
+                  <h3>Réalisations</h3>
+                  <div class="skills-list">
+                    <span class="skill-item">Automatisation</span>
+                    <span class="skill-item">Dev logiciel</span>
+                    <span class="skill-item">Sites web</span>
+                    <span class="skill-item">Data analysis</span>
+                    <span class="skill-item">Optimisation</span>
+                    <span class="skill-item">BDD</span>
+                    <span class="skill-item">Photoshop</span>
+                    <span class="skill-item">Vegas Pro</span>
+                    <span class="skill-item">Vulgarisation</span>
+                  </div>
+                </div>
+                <div class="card__shine"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__shapes" aria-hidden="true">
+          <div class="shape shape--1"></div>
+          <div class="shape shape--2"></div>
+          <div class="shape shape--3"></div>
         </div>
       </section>
 
       <section class="section container" id="projets">
         <div class="section__head reveal">
-          <h2>Projets</h2>
-          <p>
-            Mes repos GitHub publics les plus récents :
-          </p>
+          <h2 class="section__title glitch-text" data-text="PROJETS">PROJETS</h2>
+          <p>Repos GitHub publics — synchronisés en temps réel</p>
         </div>
 
         <div class="toolbar reveal">
-          <div class="pill" id="ghStatus" aria-live="polite">Prêt</div>
-          <div class="pill pill--hint">Note : ces projets sont du domaine <span class="mono">scolaire.</span> Ils répondent à un cahier des charges précis et donc <span class="mono">partiel.</span> </div>
+          <div class="pill pill--status" id="ghStatus" aria-live="polite">
+            <span class="pill__dot"></span>
+            <span class="pill__text">Prêt</span>
+          </div>
+          <div class="pill pill--hint">
+            <span class="pill__icon">ℹ</span>
+            Projets <span class="mono">scolaires</span> — cahier des charges <span class="mono">partiel</span>
+          </div>
         </div>
 
         <div class="projects" id="projectsGrid" aria-live="polite"></div>
@@ -111,42 +164,62 @@
 
       <section class="section container" id="competences">
         <div class="section__head reveal">
-          <h2>Compétences</h2>
-          <p>Maîtrise satisfaisante de plusieurs langages et outils de développement</p>
+          <h2 class="section__title glitch-text" data-text="SKILLS">SKILLS</h2>
+          <p>Stack technique & outils de développement</p>
         </div>
-
-        <div class="tags reveal" aria-label="Liste de compétences">
-          <span class="tag">Git</span>
-          <span class="tag">Python</span>
-          <span class="tag">C</span>
-          <span class="tag">Ocaml</span>
-          <span class="tag">Bash</span>
-          <span class="tag">Linux</span>
-          <span class="tag">Java</span>
-          <span class="tag">SQL</span>
-
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
+        <div class="tags">
+          <span class="tag tag--floating" style="--delay: 0;">Git</span>
+          <span class="tag tag--floating" style="--delay: 1;">Python</span>
+          <span class="tag tag--floating" style="--delay: 2;">C</span>
+          <span class="tag tag--floating" style="--delay: 3;">OCaml</span>
+          <span class="tag tag--floating" style="--delay: 4;">Bash</span>
+          <span class="tag tag--floating" style="--delay: 5;">Linux</span>
+          <span class="tag tag--floating" style="--delay: 6;">Java</span>
+          <span class="tag tag--floating" style="--delay: 7;">SQL</span>
+          <span class="tag tag--floating tag--highlight" style="--delay: 8;">HTML</span>
+          <span class="tag tag--floating tag--highlight" style="--delay: 9;">CSS</span>
+          <span class="tag tag--floating tag--highlight" style="--delay: 10;">JS</span>
         </div>
       </section>
 
-      <section class="section container" id="contact">
+      <section class="section section--contact container" id="contact">
+        <div class="contact__bg" aria-hidden="true"></div>
         <div class="section__head reveal">
-          <h2>Contact</h2>
-          <p>Dispo pour échanger sur un projet ou une opportunité.</p>
+          <h2 class="section__title section__title--large glitch-text" data-text="CONTACT">CONTACT</h2>
+          <p>Disponible pour projets & opportunités</p>
         </div>
 
         <div class="contact reveal">
-          <a class="btn" href="mailto:Quentin.Angeretti@etu.univ-grenoble-alpes.fr">Quentin.Angeretti@etu.univ-grenoble-alpes.fr</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/quentin-angeretti-013ab3269" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn--ghost" href="https://github.com/a1kaaa" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="contact-card contact-card--email" href="mailto:Quentin.Angeretti@etu.univ-grenoble-alpes.fr">
+            <span class="contact-card__icon">✉</span>
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">Quentin.Angeretti@etu.univ-grenoble-alpes.fr</span>
+          </a>
+          <div class="contact__links">
+            <a class="btn btn--social" href="https://www.linkedin.com/in/quentin-angeretti-013ab3269" target="_blank" rel="noreferrer">
+              <span class="btn__icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="btn btn--social" href="https://github.com/a1kaaa" target="_blank" rel="noreferrer">
+              <span class="btn__icon">◐</span>
+              <span>GitHub</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <footer class="footer container">
-        <div class="footer__line"></div>
-        <p class="muted">© <span id="year"></span> • a1ka</p>
+        <div class="footer__content">
+          <div class="footer__line"></div>
+          <p class="footer__text">
+            <span class="footer__copy">© <span id="year"></span></span>
+            <span class="footer__sep">—</span>
+            <span class="footer__name glitch-hover" data-text="A1KA">A1KA</span>
+          </p>
+          <div class="footer__decoration" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
       </footer>
     </main>
 
