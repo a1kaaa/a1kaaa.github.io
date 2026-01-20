@@ -1,7 +1,5 @@
-
-"use strict";
-
-(() => {
+// On définit une fonction d'initialisation
+const initPortfolio = () => {
   'use strict';
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -528,4 +526,13 @@
   console.log('%c HYPERPOP PORTFOLIO ', 'background: linear-gradient(135deg, #540863, #C2E2FA); color: white; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 4px;');
   console.log('%c Made with passion ', 'color: #C2E2FA; font-size: 12px;');
 
-})();
+  console.log("Portfolio initialisé !");
+};
+
+
+// On attend que le DOM soit chargé avant de lancer
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPortfolio);
+} else {
+  initPortfolio();
+}
