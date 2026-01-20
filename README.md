@@ -1,1 +1,1 @@
-# a1kaaa.github.io
+To access [website][a1kaaa.github.io] quicker. :)
