@@ -8,7 +8,8 @@ const initPortfolio = () => {
 
   const root = document.documentElement;
   const username = (root.dataset.githubUsername || '').trim();
-  const prefersReduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  // Force animations on regardless of OS/browser reduced-motion setting
+  const prefersReduced = false;
 
   // ═══════════════════════════════════════════════════════════════════════════
   // SCROLL REVEAL WITH STAGGER
